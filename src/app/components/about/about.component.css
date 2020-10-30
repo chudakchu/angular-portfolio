@@ -10,6 +10,7 @@ section {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -20,16 +21,22 @@ section {
     padding: 25px;
 }
 
-span {
-display: inline-block;
-position: relative;
+.infoBox p {
+    margin: 0;
 }
 
-span:before {
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background:rgba(192, 121, 242, .96);
-    bottom: 0;
-  }
+.infoBox:last-child {
+    margin-top: 20px;
+}
+
+span {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+    
+}

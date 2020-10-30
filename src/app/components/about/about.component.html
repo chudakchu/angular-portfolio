@@ -1,11 +1,20 @@
 <section> 
-    <div class="container">
+    <div class="container"> 
+        <div class="infoBox">
+            <h3><span>My github page</span></h3>
+            <p><b>Name</b> : {{ user.login }}</p>
+            <p><b>Id</b> : {{ user.id }}</p>
+            <p><b>Account created at</b> : {{ user.created_at }}</p>
+            <p><b>Number of public repos</b> : {{ user.public_repos }}</p>
+            <p><b>Followers</b> : {{user.followers}}</p>
+            <p><b>Link to profile</b> : <a href="{{ user.html_url }}">{{ user.html_url }}</a></p>
+        </div>     
+        <div class="infoBox">
+            <div class="text">
+            My name is Dana and I'm 18 years old. I'm still getting my degree in Software Engineering at Oil and Gas University. 
+            Most of the time I spend on the Internet reading webcomics or listening to post-rock.
+            </div>
+        </div>
         
-   <div class="infoBox">
-       <div class="text">
-        My name is <span>Dana</span> and I'm 18 years old. I'm still getting my degree in Software Engineering at Oil and Gas University. 
-        When I was a child, I used to have quite a lot of hobbies, but now, when I'm older, I'm not that active anymore, so most of the time I spend on the Internet reading webcomics or listening to post-rock.
-       </div>
     </div>
-   </div>
 </section>
