@@ -3,22 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { AboutComponent } from './about/about.component';
-import { EducationComponent } from './education/education.component';
+import { AboutComponent } from './components/about/about.component';
+import { EducationComponent } from './components/education/education.component';
 import { HomeComponent } from './components/home/home.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
     AboutComponent,
     EducationComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@500&display=swap');
+
+section {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBox {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    margin-left: 25px;
+}
+
+.image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+div a {
+    text-decoration: none;
+    display: block;
+}
+
+div a:link,
+div a:visited {
+    color: black;
+}
+
+.btn {
+    position: relative;
+    margin: auto;
+    padding: 10px 15px;
+    transition: all .2s ease;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(192, 121, 242, .96);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+
+.btn span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+}
+
+.btn:hover:before {
+    width: 100%;
+    background:  rgba(192, 121, 242, .96);
+}
+
+.btn:hover svg {
+    transform: translateX(0);
+}
+
+.btn:active {
+    transform: scale(.96);
+}
+
+@media (max-width: 574px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin: 20px 0
+    }
+}

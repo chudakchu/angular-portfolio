@@ -5,7 +5,6 @@ section {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 25px;
     width: 600px;
 }
 
@@ -15,13 +14,20 @@ section {
 }
 
 .infoBox {
+    width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 26px;
     outline:  rgba(192, 121, 242, .5) dashed 3px;
-    padding: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h3 {
+    margin: 0 !important;
+}
+.infoBox h3 {
+    margin: 0;
     display: inline-block;
     position: relative;
     margin: 10px 0 5px 20px;
@@ -29,8 +35,11 @@ h3 {
     animation: show  ease-in both;
 }
 
-ul {
-    padding-left: 60px;
+.infoBox ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-
+.infoBox ul li {
+    text-align: left;
+}

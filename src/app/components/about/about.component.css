@@ -1,0 +1,35 @@
+section {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBox {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    outline:  rgba(192, 121, 242, .5) dashed 3px;
+    padding: 25px;
+}
+
+span {
+display: inline-block;
+position: relative;
+}
+
+span:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background:rgba(192, 121, 242, .96);
+    bottom: 0;
+  }
